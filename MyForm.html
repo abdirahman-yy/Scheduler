@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> My Form </title>
+        <link rel="stylesheet" href="MyForm.css">
+        <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKV_ZWS2vXsELohIbIxE_Liqf0msc0W2U&libraries=places&callback=initMap">
+        </script>
+        <script src = "MyForm.js"></script>
+    </head>
+    <body>
+        <nav>
+            <a href="mySchedule.html"> My Schedule </a>
+            <a href="AboutMe.html" target="_self"> About Me </a>
+            <a  href="MyForm.html" target="_self"> My Form </a>
+        </nav>
+        <h1> My Form </h1>
+        <div class="float-container">
+            <div>
+                <form action="https://www-users.cselabs.umn.edu/~cuixx327/a2.php" method="post">
+                    <table>
+                        <tr>
+                            <td> <label for="event"> Event </label> </td>
+                            <td> <input class="input" type="text" id="event" name ="event" required pattern = "[A-Za-z0-9\s]+" title="Alpha-Numeric characters only"> </td>
+                            <!-- making a drop down select chose from this -->
+                        </tr>
+                        <tr>
+                            <td> <label for="day"> Day </label> </td>
+                            <td> 
+                                <select class="input" required name="day" id="day">
+                                    <option value=""> Days </option>
+                                    <option value="mon"> Monday </option>
+                                    <option value="tues"> Tuesday</option>
+                                    <option value="wed"> Wednesday </option>
+                                    <option value="thurs"> Thursday </option>
+                                    <option value="fri"> Friday </option>
+                                    <option value="sat"> Saturday</option>
+                                    <option value="sun"> Sunday</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="start"> Start </label> </td>
+                            <td> <input class="input" type="time" id="start" name="start" required> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="end"> End </label> </td>
+                            <td> <input class="input" type="time" id="end" name="end" required> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="phone"> Number </label> </td>
+                            <td> <input class="input" type="tel" id="phone" name="phone" required title="Valid telephone numbers only"> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="location"> Location </label> </td>
+                            <td> <input class="input" type="text" id="location" name="location" required> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="extra"> Extra Info </label> </td>
+                            <td> <input class="input" type="text" id="extra" name="extra"> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="url"> Enter URL </label> </td>
+                            <td> <input class="input" type="url" id="url" name="url" required> </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td> <input class="submit" type="submit" id="submit" name="submit"> </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div id="map" class="map"></div>
+        </div>
+    </body>
+</html>

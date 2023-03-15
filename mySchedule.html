@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title> My Weekly Schedule </title>
+      <link rel="stylesheet" href="MySchedule.css">
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKV_ZWS2vXsELohIbIxE_Liqf0msc0W2U&callback=initMap&libraries=&v=weekly&libraries=places" async></script>
+      <script src = "MySchedule.js"> </script>
+    </head>
+    <body>
+      <nav>
+        <a href="mySchedule.html"> My Schedule </a> 
+        <br>
+        <a href="AboutMe.html" target="_self"> About Me </a>
+        <br>
+        <a href="MyForm.html" target="_self"> My Form </a>
+      </nav>
+        <h1> My Schedule </h1>
+        <div class="float-container"> 
+          <table> 
+            <tr>
+              <th> Day </th>
+              <th> Event </th>
+              <th> Time </th>
+              <th> Event Location (Virtual or Physical) </th>
+              <th> Phone </th>
+              <th> Url </th>
+            </tr>
+            <tr onmouseover="changeimg('img/folwell.jpeg', 'Folwell'), 
+                placeholder('img/folwell.jpeg', 'Folwell', 'Folwell-mon', false)" 
+                onmouseout="placeholder('img/folwell.jpeg', 'Folwell', 'Folwell-mon', true)">
+              <td class = "eventDay"> Monday </td>
+              <td class = "eventName"> Arabic </td>
+              <td class="eventTime"> 10:10-11 am </td>
+              <td class="eventLocation"> 9 Pleasant St SE, Minneapolis, MN 55455 <img id="Folwell-mon" class="smallImg" src="img/folwell.jpeg'" alt="" hidden> </td>
+              <td> 612-625-6534 </td>
+              <td> <a href="https://cla.umn.edu/asian-middle-eastern-studies/languages/arabic" target="_blank"> Arabic Language </a> </td>
+            </tr>
+            <tr onmouseover="changeimg('img/Tate.png', 'Tate Hall'), 
+            placeholder('img/Tate.png', 'Tate Hall', 'tate-mon', false)" 
+            onmouseout="placeholder('img/Tate.png', 'Tate Hall', 'tate-mon', true)">
+              <td class = "eventDay"> Monday </td>
+              <td class="eventName"> Internet Programming </td>
+              <td class="eventTime"> 11:15-12:30 pm </td>
+              <td class="eventLocation"> 116 Church St SE, Minneapolis, MN 55455 <img id="tate-mon" class="smallImg" src="img/Tate.png" alt="Tate Hall" hidden></td>
+              <td> No Phone Number </td>
+              <td> <a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=790654" target="_blank"> Internet Programming (Web Developement) </a> </td>
+            </tr>
+            <tr onmouseover="changeimg('img/Bruinicks.jpeg', 'Bruinicks'), 
+            placeholder('img/Bruinicks.jpeg', 'Bruinicks', 'Bruininks-mon', false)" 
+            onmouseout="placeholder('img/Bruinicks.jpeg', 'Bruinicks', 'Bruininks-mon', true)">
+              <td class = "eventDay"> Monday </td>
+              <td class="eventName"> Software Engineering I </td>
+              <td class="eventTime"> 1-2:15 pm </td>
+              <td class="eventLocation"> 222 Pleasant St SE, Minneapolis, MN 55455 <img class="smallImg" id="Bruininks-mon" src="img/Bruinicks.jpeg" alt="Bruinicks" hidden></td>
+              <td> No Phone Number </td>
+              <td> <a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=004312" target="_blank"> Software Engineering I </a> </td>
+            </tr>
+            <tr onmouseover="changeimg('img/lifetime.jpeg', 'LifeTime'), 
+            placeholder('img/lifetime.jpeg', 'Bruinicks', 'lifetime-mon', false)" 
+            onmouseout="placeholder('img/lifetime.jpeg', 'LifeTime', 'lifetime-mon', true)">
+              <td class = "eventDay"> Monday </td>
+              <td class="eventName"> Gym </td>
+              <td class="eventTime"> 3:30-5 pm </td>
+              <td class="eventLocation"> 1200 E Moore Lake Dr, Fridley, MN 55432 <img id="lifetime-mon" class="smallImg" src="img/lifetime.jpeg" alt="LifeTime" hidden></td>
+              <td> (763) 656-1500 </td>
+              <td> <a href="https://www.lifetime.life/life-time-locations/mn-fridley.html?utm_source=google&utm_medium=local&utm_campaign=google-local-club" target="_blank"> LifeTime </a> </td>
+            </tr>
+            <tr onmouseover="changeimg('img/folwell.jpeg', 'Folwell'), 
+            placeholder('img/folwell.jpeg', 'Folwell', 'Folwell-tues', false)" 
+            onmouseout="placeholder('img/folwell.jpeg', 'Folwell', 'Folwell-tues', true)">
+              <td> Tuesday </td>
+              <td> Arabic </td>
+              <td> 10:10-11 am </td>
+              <td> 9 Pleasant St SE, Minneapolis, MN 55455 <img id="Folwell-tues" class="smallImg" src="img/folwell.jpeg" alt="Folwell" hidden> </td>
+              <td> 612-625-6534 </td>
+              <td> <a href="https://cla.umn.edu/asian-middle-eastern-studies/languages/arabic" target="_blank"> Arabic Language </a> </td>
+            </tr>
+            <tr onmouseover="changeimg('img/folwell.jpeg', 'Folwell'), 
+            placeholder('img/folwell.jpeg', 'Folwell', 'Folwell-wed', false)" 
+            onmouseout="placeholder('img/folwell.jpeg', 'Folwell', 'Folwell-wed', true)">
+              <td> Wednesday </td>
+              <td> Arabic </td>
+              <td> 10:10-11 am </td>
+              <td> 9 Pleasant St SE, Minneapolis, MN 55455 <img id="Folwell-wed" class="smallImg" src="img/folwell.jpeg" alt="Folwell" hidden> </td>
+              <td> 612-625-6534 </td>
+              <td> <a href="https://cla.umn.edu/asian-middle-eastern-studies/languages/arabic" target="_blank"> Arabic Language </a> </td>
+            </tr>
+            <tr onmouseover="changeimg('img/Tate.png', 'Tate Hall'), 
+            placeholder('img/Tate.png', 'Tate Hall', 'tate-wed', false)" 
+            onmouseout="placeholder('img/Tate.png', 'Tate Hall', 'tate-wed', true)">
+              <td> Wednesday </td>
+              <td> Internet Programming </td>
+              <td> 11:15-12:30 pm </td>
+              <td> 116 Church St SE, Minneapolis, MN 55455  <img id="tate-wed" class="smallImg" src="img/Tate.png" alt="Tate Hall" hidden></td>
+              <td> No Phone Number </td>
+              <td> <a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=790654" target="_blank"> Internet Programming (Web Developement) </a> </td>
+            </tr>
+            <tr onmouseover="changeimg('img/Bruinicks.jpeg', 'Bruinicks'), 
+            placeholder('img/Bruinicks.jpeg', 'Bruinicks', 'Bruininks-wed', false)" 
+            onmouseout="placeholder('img/Bruinicks.jpeg', 'Bruinicks', 'Bruininks-wed', true)">
+              <td> Wednesday </td>
+              <td> Software Engineering I </td>
+              <td> 1-2:15 pm </td>
+              <td> 222 Pleasant St SE, Minneapolis, MN 55455  <img id="Bruininks-wed" class="smallImg" src="img/Bruinicks.jpeg" alt="Bruinicks" hidden></td>
+              <td> No Phone Number </td>
+              <td> <a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=004312" target="_blank"> Software Engineering I </a> </td>
+            </tr>
+            <tr onmouseover="changeimg('img/folwell.jpeg', 'Folwell'), 
+            placeholder('img/folwell.jpeg', 'Folwell', 'Folwell-thurs', false)" 
+            onmouseout="placeholder('img/folwell.jpeg', 'Folwell', 'Folwell-thurs', true)">
+              <td> Thursday </td>
+              <td> Arabic </td>
+              <td> 10:10-11 am </td>
+              <td> 9 Pleasant St SE, Minneapolis, MN 55455 <img id="Folwell-thurs" class="smallImg" src="img/folwell.jpeg" alt="Folwell" hidden> </td>
+              <td> 612-625-6534 </td>
+              <td> <a href="https://cla.umn.edu/asian-middle-eastern-studies/languages/arabic" target="_blank"> Arabic Language </a> </td>
+            </tr>
+            <tr onmouseover="changeimg('img/folwell.jpeg', 'Folwell'), 
+            placeholder('img/folwell.jpeg', 'Folwell', 'Folwell-fri', false)" 
+            onmouseout="placeholder('img/folwell.jpeg', 'Folwell', 'Folwell-fri', true)">
+              <td> Friday </td>
+              <td> Arabic </td>
+              <td> 10:10-11 am </td>
+              <td> 9 Pleasant St SE, Minneapolis, MN 55455 <img id="Folwell-fri" class="smallImg" src="img/folwell.jpeg" alt="Folwell" hidden> </td>
+              <td> 612-625-6534 </td>
+              <td> <a href="https://cla.umn.edu/asian-middle-eastern-studies/languages/arabic" target="_blank"> Arabic Language </a> </td>
+            </tr>
+            <tr onmouseover="changeimg('img/lifetime.jpeg', 'LifeTime'), 
+            placeholder('img/lifetime.jpeg', 'Bruinicks', 'lifetime-sat', false)" 
+            onmouseout="placeholder('img/lifetime.jpeg', 'LifeTime', 'lifetime-sat', true)">
+              <td> Saturday </td>
+              <td> Gym </td>
+              <td> 3:30-5 pm </td>
+              <td> 1200 E Moore Lake Dr, Fridley, MN 55432  <img id="lifetime-sat" class="smallImg" src="img/lifetime.jpeg" alt="LifeTime" hidden></td>
+              <td> (763) 656-1500 </td>
+              <td> <a href="https://www.lifetime.life/life-time-locations/mn-fridley.html?utm_source=google&utm_medium=local&utm_campaign=google-local-club" target="_blank"> LifeTime </a> </td>
+            </tr>
+            <tr onmouseover="changeimg('img/AbuHurayrah.jpg', 'AbuHurayrah'), 
+            placeholder('img/AbuHurayrah.jpg', 'AbuHurayrah', 'AbuHurayrah', false)" 
+            onmouseout="placeholder('img/AbuHurayrah.jpg', 'AbuHurayrah', 'AbuHurayrah', true)">
+              <td class = "eventDay"> Sunday </td>
+              <td class="eventName"> Teaching Quran & Islamic Studies </td>
+              <td class="eventTime"> 8 am -12 pm</td>
+              <td class="eventLocation"> 3055 Old Hwy 8, Minneapolis, MN 55418 <img id="AbuHurayrah" class="smallImg" src="img/AbuHurayrah.jpg" alt="AbuHurayrah" hidden></td>
+              <td> No Phone </td>
+              <td> <a href="https://prayersconnect.com/mosques/84070954-abu-huraira-masjid-minneapolis-minnesota-united-states" target="_blank"> LifeTime </a> </td>
+          </tr>
+          </table>
+          <button class = "button" id="button" onclick="inAndOut()" value="Go Away!" > Go Away </button>
+          <img class="bigImg" style=float:right; id="image" src="img/gophers-mascot.png" alt="Goldy">
+          </div>
+          <div class="float-container">
+            <div id="sidebar"> </div>
+            <div id="map"> </div> 
+            <div class="direction">
+                <img class ="thisimg" src="img/direction.png" alt="direction.png">
+                <br>
+                <label for="directions">Directions to </label>
+                <br>
+                <input type="text" id="directions" name="directions" pattern="[a-zA-Z0-9\s.#,]+" required title="">
+                <br>
+                <input type="radio" id="walking" name="transportation" value="WALKING" checked="checked">
+                <label for="walking">WALK</label>
+                <br>
+                <input type="radio" id="driving" name="transportation" value="DRIVING">
+                <label for="driving">DRIVE</label>
+                <br>
+                <input type="radio" id="transit" name="transportation" value="TRANSIT">
+                <label for="transit">TRANSIT</label>
+                <br>
+                <input type="submit" value="Go" id="userDestination" onclick="getLocation()">
+            </div>
+          </div>
+    </body>
+</html>
